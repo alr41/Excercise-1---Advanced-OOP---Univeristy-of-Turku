@@ -3,10 +3,11 @@ public class Main {
     //
   }
 
-  public static float avg(int[] nums) throws EmptyArray, NegativeNumbersException {
+  public static float avg(int[] nums) throws EmptyArray, NegativeNumberException {
     int sum = 0;
     if (nums == null || nums.length == 0)
       throw new EmptyArray();
+    List<Integer> negativeIndices = new ArrayList<>();
     for (int i = 0; i < nums.length; i++) {
       if (nums[i] < 0) {
         negativeIndices.add(i);
@@ -14,7 +15,7 @@ public class Main {
     }
 
     if (!negativeIndices.isEmpty()) {
-      throw new NegativeNumbersException(negativeIndices);
+      throw new NegativeNumberException(negativeIndices);
     }
 
     for(int n: nums) {
