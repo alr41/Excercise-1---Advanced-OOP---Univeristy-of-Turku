@@ -3,8 +3,7 @@
 ## 1. Overview 
 This project is addresses the Excercise 1 of the "Modularity" part of the Advanced Object-Oriented Programming course.
 
-## 2. Author
-Name: Alyah
+## 2. Student ID
 Student ID: 2406530
 
 ## 3. Files
@@ -24,4 +23,5 @@ When the variable nums refers to the array [1, 2], the result in the end of the 
 
 As for when the array is empty, the result would be the excpetion 'EmptyArray', as nums.length == 0 would be true. 
 
-## 6. Output examples
+## 6. Output example
+With the [-1, 1, 2] array, the output is: "The 1st number -1 in your array is invalid"
